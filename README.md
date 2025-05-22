@@ -12,6 +12,7 @@ PERFORMANCE
     🧼 Cleaner code structure and smoother workflow
 
 The turtle's movement speed has been increased for a more dynamic and responsive experience. The overall performance is smoother and more consistent than before.
+
 CREDITS
 
 Developed by

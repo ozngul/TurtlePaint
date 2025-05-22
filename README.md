@@ -1,0 +1,1 @@
+The user is prevented from using things that contain different values in fields that require numbers, so the program asks to be rewritten instead of closing in case of misuse. At the same time, the speed of the Turtle is faster than the first time because it was slower than otherwise. The program is smoother, cleaner, and works well.

@@ -19,6 +19,10 @@ public class MainApp {
         World world = new World(width, height);
         Turtle turtle = new Turtle(world, 0, 0);
         turtle.setDelay(0.009);  // Çizim hızı
+        drawGrid(world, 50, width, height);
+        drawOriginCross(world, 5, 1);  // küçük kırmızı çarpı
+
+
 
         while (true) {
             System.out.println("\nHome Screen");
@@ -158,5 +162,42 @@ public class MainApp {
                 scanner.nextLine();
             }
         }
+    }
+    public static void drawGrid(World world, int spacing, int width, int height) {
+        Color gridColor = Color.LIGHT_GRAY;
+        double penWidth = 1;
+
+        // Yatay çizgiler
+        for (int y = 0; y <= height; y += spacing) {
+            Point2D start = new Point2D.Double(0, y);
+            Point2D end = new Point2D.Double(width, y);
+            world.drawLine(start, end, penWidth, gridColor);
+        }
+
+        // Dikey çizgiler
+        for (int x = 0; x <= width; x += spacing) {
+            Point2D start = new Point2D.Double(x, 0);
+            Point2D end = new Point2D.Double(x, height);
+            world.drawLine(start, end, penWidth, gridColor);
+        }
+
+        // Kırmızı çarpı: orta nokta yaklaşık
+        Point2D centerX = new Point2D.Double(width / 2.0, height / 2.0);
+        world.drawLine(new Point2D.Double(centerX.getX() - 5, centerX.getY()),
+                new Point2D.Double(centerX.getX() + 5, centerX.getY()), penWidth, Color.RED);
+        world.drawLine(new Point2D.Double(centerX.getX(), centerX.getY() - 5),
+                new Point2D.Double(centerX.getX(), centerX.getY() + 5), penWidth, Color.RED);
+    }
+    public static void drawOriginCross(World world, double size, double penWidth) {
+        Color originColor = Color.RED;
+
+        // Orijin (0,0) etrafında yatay ve dikey çizgilerle çarpı
+        Point2D left = new Point2D.Double(-size, 0);
+        Point2D right = new Point2D.Double(size, 0);
+        Point2D top = new Point2D.Double(0, -size);
+        Point2D bottom = new Point2D.Double(0, size);
+
+        world.drawLine(left, right, penWidth, originColor);
+        world.drawLine(top, bottom, penWidth, originColor);
     }
 }

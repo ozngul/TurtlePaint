@@ -4,7 +4,6 @@ The program draws three specific shapes in canvas dimensions with a turtle. Tria
 PERFORMANCE
 
 
-
     🚫 Prevents invalid inputs (e.g., text where numbers are expected)
 
     ➕ Checkered areas in the background to better understand the coordinate
@@ -17,13 +16,15 @@ PERFORMANCE
 
     🧼 Cleaner code structure and smoother workflow
 
+    
+
 The turtle's movement speed has been increased for a more dynamic and responsive experience. The overall performance is smoother and more consistent than before.
 
 CREDITS
 
 Developed by
 Ozan Gül &&
-Mustafa Umut Tikbaş
+Mustafa Umut Tikbaş (Exaaiser)
 
   
   

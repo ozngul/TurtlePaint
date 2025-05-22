@@ -1,9 +1,15 @@
 PROJECT OVERVIEW
 
-This program ensures cleaner execution by preventing invalid input types. Fields expecting numeric values cannot be filled with text. Instead of crashing, the program prompts the user to try again, maintaining smooth control flow.
+The program draws three specific shapes in canvas dimensions with a turtle. Triangle, Square and Round. In general, we have detailed the program from the following sides:
 PERFORMANCE
 
+
+
     🚫 Prevents invalid inputs (e.g., text where numbers are expected)
+
+    ➕ Checkered areas in the background to better understand the coordinate
+
+    🔴 Origin point so that we can understand where we are at all times
 
     🔁 Graceful error handling: prompts re-entry instead of closing
 

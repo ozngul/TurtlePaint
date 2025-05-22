@@ -16,8 +16,8 @@ The turtle's movement speed has been increased for a more dynamic and responsive
 CREDITS
 
 Developed by
-Ozan Gül
-Mustafa Umut   Tikbaş
+Ozan Gül &&
+Mustafa Umut Tikbaş
 
   
   
